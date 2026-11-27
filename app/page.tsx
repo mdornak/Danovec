@@ -1,10 +1,8 @@
+import { SiteFooter, SiteHeader } from "./components/site-chrome";
+
 const Arrow = ({ diagonal = false }: { diagonal?: boolean }) => (
   <span aria-hidden="true" className="arrow">{diagonal ? "↗" : "→"}</span>
 );
-
-function BrandMark() {
-  return <span className="brand-mark" aria-hidden="true"><span /><span /><span /><span /></span>;
-}
 
 function DashboardPreview() {
   return (
@@ -47,15 +45,12 @@ const features = [
 export default function Home() {
   return (
     <main>
-      <div className="announcement"><span className="announcement-dot" /> Připravujeme přehlednější cestu světem daní <a href="#jak-to-funguje">Zjistit víc <Arrow /></a></div>
-      <header className="site-header"><a href="#domu" className="brand" aria-label="Daňovec, domů"><BrandMark /><span>daňovec</span></a><nav aria-label="Hlavní navigace"><a href="#funkce">Co umí</a><a href="#jak-to-funguje">Jak to funguje</a><a href="#otazky">Časté otázky</a></nav><a className="header-cta" href="#jak-to-funguje">Seznámit se <Arrow diagonal /></a><button className="mobile-menu" aria-label="Otevřít navigaci">☰</button></header>
+      <SiteHeader />
       <section className="hero" id="domu"><div className="hero-copy"><div className="hero-kicker"><span className="kicker-star">✳</span> FINANCE PRO OSVČ, SROZUMITELNĚ</div><h1>V podnikání<br />jasno. <span>V daních taky.</span></h1><p className="hero-description">Příjmy, výdaje i důležité termíny. Daňovec vám pomůže udělat si v podnikatelských financích pořádek — srozumitelně a bez zbytečného stresu.</p><div className="hero-actions"><a href="#funkce" className="button-primary">Prozkoumat Daňovce <Arrow diagonal /></a><a href="#jak-to-funguje" className="text-link">Jak to funguje <Arrow /></a></div><div className="hero-footnote"><span className="mini-check">✓</span> Přehledně česky <span className="foot-sep">·</span> Navrženo pro OSVČ</div></div><div className="hero-visual"><div className="visual-glow" /><div className="hero-orbit orbit-one" /><div className="hero-orbit orbit-two" /><DashboardPreview /><span className="visual-caption"><i /> UKÁZKA ROZHRANÍ <span>01 / 03</span></span><span className="visual-stamp">MÉNĚ<br />PAPÍROVÁNÍ<br /><b>VÍC PODNIKÁNÍ</b></span></div></section>
       <section className="trust-strip" aria-label="Pro koho je Daňovec"><span>POSTAVENO PRO LIDI, KTEŘÍ</span><div><span className="trust-icon">↗</span> Podnikají na sebe</div><div><span className="trust-icon">⌘</span> Chtějí mít přehled</div><div><span className="trust-icon">✳</span> Raději tvoří než počítají</div></section>
       <section className="features section-wrap" id="funkce"><div className="section-heading"><div><span className="section-eyebrow">PODNIKÁNÍ MÁ DOST VÝZEV</span><h2>Čísla dávají smysl,<br /><span>když jsou na jednom místě.</span></h2></div><p>Daňovec vám pomůže zorientovat se v tom podstatném. Méně hledání v tabulkách, více prostoru na vlastní práci.</p></div><div className="feature-grid">{features.map((feature) => <article className="feature-card" key={feature.number}><div className="feature-top"><span>{feature.number} / 03</span><i>{feature.icon}</i></div><h3>{feature.title}</h3><p>{feature.text}</p><a href="#jak-to-funguje" aria-label={`Více o: ${feature.title}`}><Arrow diagonal /></a></article>)}</div></section>
-      <section className="calm-section" id="jak-to-funguje"><div className="calm-inner"><div className="calm-copy"><span className="section-eyebrow">VÍC KLIDU V KAŽDÉM MĚSÍCI</span><h2>Nejdřív přehled.<br /><span>Pak klid v hlavě.</span></h2><p>Dobré rozhodnutí začíná tím, že víte, na čem jste. Daňovec dává vašim číslům srozumitelné místo a pomáhá vám průběžně sledovat, co se ve vašem podnikání děje.</p><a href="#otazky" className="button-dark">Jak Daňovec funguje <Arrow diagonal /></a><small>Daňovec nenahrazuje daňové poradenství.</small></div><div className="calm-art" aria-hidden="true"><div className="art-sun"/><div className="art-ring ring-a"/><div className="art-ring ring-b"/><div className="art-card"><span>VAŠE PODNIKÁNÍ, V KOSTCE</span><div className="art-bars"><i/><i/><i/><i/><i/><i/><i/><i/><i/><i/><i/><i/></div><div className="art-card-foot"><span>LEDEN</span><b>ROK V ROVNOVÁZE <i>↗</i></b><span>PROSINEC</span></div></div><div className="art-orb orb-one"/><div className="art-orb orb-two"/><span className="art-asterisk">✳</span></div></div></section>
       <section className="faq section-wrap" id="otazky"><div><span className="section-eyebrow">ČASTÉ OTÁZKY</span><h2>Na rovinu.</h2><p>Daňové věci si zaslouží jasné odpovědi.</p></div><div className="faq-list"><details><summary>Pro koho je Daňovec určený? <span>＋</span></summary><p>Daňovec navrhujeme pro české OSVČ, které chtějí mít své podnikatelské finance a povinnosti přehledněji uspořádané.</p></details><details><summary>Nahradí Daňovec účetní nebo daňového poradce? <span>＋</span></summary><p>Ne. Daňovec má pomoci s orientací a každodenním přehledem. Konkrétní daňové a účetní otázky vždy konzultujte s kvalifikovaným odborníkem.</p></details><details><summary>Je aplikace už dostupná? <span>＋</span></summary><p>Teď představujeme Daňovce a jeho směr. Veřejná stránka je první krok; přihlášenou aplikaci zatím nespouštíme.</p></details></div></section>
-      <section className="closing-cta"><span className="closing-spark">✳</span><div><span className="section-eyebrow">DAŇOVEC · FINANCE SROZUMITELNĚ</span><h2>Věnujte energii<br />svému podnikání.</h2><p>O přehled a čísla se postaráme společně.</p></div><a href="#domu" className="button-light">Zpět na začátek <Arrow diagonal /></a><span className="closing-watermark" aria-hidden="true">d.</span></section>
-      <footer className="site-footer"><a href="#domu" className="brand footer-brand"><BrandMark /><span>daňovec</span></a><span className="footer-note">Přehled v podnikání. Klidnější hlava.</span><div className="footer-links"><a href="#funkce">Co umí</a><a href="#otazky">Časté otázky</a></div><span className="copyright">© 2026 Daňovec</span></footer>
+      <SiteFooter />
     </main>
   );
 }
