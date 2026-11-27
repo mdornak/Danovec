@@ -15,7 +15,7 @@ function Arrow() {
 export function SiteHeader() {
   return (
     <header className="site-header">
-      <a href="/" className="brand" aria-label="Daňovec, domů"><BrandMark /><span>daňovec</span></a>
+      <a href="/" className="brand" aria-label="Daňovec, domů"><BrandMark /><span>Daňovec</span></a>
       <nav aria-label="Hlavní navigace">
         <a href="/co-umi">Co umí</a>
         <a href="/jak-to-funguje">Jak to funguje</a>
@@ -29,7 +29,7 @@ export function SiteHeader() {
 export function SiteFooter() {
   return (
     <footer className="site-footer">
-      <a href="/" className="brand footer-brand"><BrandMark /><span>daňovec</span></a>
+      <a href="/" className="brand footer-brand"><BrandMark /><span>Daňovec</span></a>
       <div className="footer-links"><a href="/co-umi">Co umí</a><a href="/otazky">Časté otázky</a></div>
       <span className="copyright">© 2026 Daňovec</span>
     </footer>
