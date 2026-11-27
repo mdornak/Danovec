@@ -1,4 +1,4 @@
-import { SiteFooter, SiteHeader } from "./components/site-chrome";
+import { BrandMark, SiteFooter, SiteHeader } from "./components/site-chrome";
 
 const Arrow = ({ diagonal = false }: { diagonal?: boolean }) => (
   <span aria-hidden="true" className="arrow">{diagonal ? "↗" : "→"}</span>
