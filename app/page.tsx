@@ -23,6 +23,7 @@ export default function Home() {
             <a href="/jak-to-funguje" className="button-secondary">Jak to funguje</a>
           </div>
         </div>
+        <div className="hero-panel" aria-hidden="true" />
       </section>
       <section className="trust-strip" aria-label="Pro koho je Daňovec"><span>POSTAVENO PRO LIDI, KTEŘÍ</span><div><span className="trust-icon">↗</span> Podnikají na sebe</div><div><span className="trust-icon">⌘</span> Chtějí mít přehled</div><div><span className="trust-icon">✳</span> Raději tvoří než počítají</div></section>
       <section className="features section-wrap" id="funkce"><div className="section-heading"><div><span className="section-eyebrow">PODNIKÁNÍ MÁ DOST VÝZEV</span><h2>Čísla dávají smysl,<br /><span>když jsou na jednom místě.</span></h2></div><p>Daňovec vám pomůže zorientovat se v tom podstatném. Méně hledání v tabulkách, více prostoru na vlastní práci.</p></div><div className="feature-grid">{features.map((feature) => <article className="feature-card" key={feature.number}><div className="feature-top"><span>{feature.number} / 03</span><i>{feature.icon}</i></div><h3>{feature.title}</h3><p>{feature.text}</p><a href="/jak-to-funguje" aria-label={`Více o: ${feature.title}`}><Arrow diagonal /></a></article>)}</div></section>
