@@ -1,7 +1,11 @@
 import type { ReactNode } from "react";
 
 export function BrandMark() {
-  return <span className="brand-mark" aria-hidden="true"><span /><span /><span /><span /></span>;
+  return (
+    <svg className="brand-mark" viewBox="80 140 320 200" aria-hidden="true" focusable="false">
+      <path fill="#080808" d="M186 152 236 188 262 152 312 188 338 152 391 191 294 328 244 292 219 328 168 292 142 328 89 290Z" />
+    </svg>
+  );
 }
 
 function Arrow() {

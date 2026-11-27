@@ -29,3 +29,9 @@
 .info-faq{margin-top:48px}
 @media(max-width:1220px){.info-page{margin-left:40px;margin-right:40px}}
 @media(max-width:620px){.site-header{height:auto;min-height:68px;flex-wrap:wrap;gap:0;padding:14px 21px 12px}.site-header nav{display:flex;order:3;width:100%;margin:12px 0 0;gap:17px;flex-wrap:wrap}.site-header nav a{font-size:11px}.site-header .header-cta{display:none}.info-page{min-height:calc(100vh - 175px);margin:0;padding:55px 21px 65px}.info-hero h1{font-size:48px}.info-hero>p{font-size:12px}.info-cards{grid-template-columns:1fr;margin-top:34px}.info-cards .feature-card{min-height:145px}.step-card{grid-template-columns:42px 1fr;gap:10px;padding:18px 0}.step-card>span{padding-top:20px}.step-card h2{font-size:16px}.step-card p{font-size:11px}}
+/* Use the Daňovec logo mark in the wordmark lockup */
+.brand-mark{display:block;width:34px;height:21px;flex:none;transform:none}
+.brand-mark span{display:none}
+.dash-brand .brand-mark{width:18px;height:11px;gap:0}
+.footer-brand .brand-mark{width:29px;height:18px}
+@media(max-width:620px){.brand-mark{width:31px;height:19px}.dash-brand .brand-mark{width:16px;height:10px}.footer-brand .brand-mark{width:27px;height:17px}}
