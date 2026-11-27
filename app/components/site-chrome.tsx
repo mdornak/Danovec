@@ -26,7 +26,6 @@ export function SiteFooter() {
   return (
     <footer className="site-footer">
       <a href="/" className="brand footer-brand"><BrandMark /><span>daňovec</span></a>
-      <span className="footer-note">Přehled v podnikání. Klidnější hlava.</span>
       <div className="footer-links"><a href="/co-umi">Co umí</a><a href="/otazky">Časté otázky</a></div>
       <span className="copyright">© 2026 Daňovec</span>
     </footer>
