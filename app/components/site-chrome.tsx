@@ -17,9 +17,10 @@ export function SiteHeader() {
     <header className="site-header">
       <a href="/" className="brand" aria-label="Daňovec, domů"><BrandMark /><span>Daňovec</span></a>
       <nav aria-label="Hlavní navigace">
-        <a href="/co-umi">Co umí</a>
-        <a href="/jak-to-funguje">Jak to funguje</a>
-        <a href="/otazky">Časté otázky</a>
+        <a href="/funkce">Funkce</a>
+        <a href="/zdroje">Zdroje</a>
+        <a href="/blog">Blog</a>
+        <a href="/cenik">Ceník</a>
       </nav>
       <a className="header-cta" href="/jak-to-funguje">Seznámit se <Arrow /></a>
     </header>
@@ -30,7 +31,7 @@ export function SiteFooter() {
   return (
     <footer className="site-footer">
       <a href="/" className="brand footer-brand"><BrandMark /><span>Daňovec</span></a>
-      <div className="footer-links"><a href="/co-umi">Co umí</a><a href="/otazky">Časté otázky</a></div>
+      <div className="footer-links"><a href="/funkce">Funkce</a><a href="/zdroje">Zdroje</a><a href="/blog">Blog</a><a href="/cenik">Ceník</a></div>
       <span className="copyright">© 2026 Daňovec</span>
     </footer>
   );

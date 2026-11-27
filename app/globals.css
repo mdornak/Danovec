@@ -61,3 +61,7 @@
 /* Large neutral panel below the hero actions */
 .hero-panel{width:100%;height:340px;background:#F2F0EE;border-radius:18px}
 @media(max-width:700px){.hero-panel{height:220px;border-radius:14px}}
+
+/* Improve navigation label readability */
+.site-header nav a{font-size:15px;font-weight:500}
+@media(max-width:620px){.site-header nav a{font-size:13px;font-weight:500}}
