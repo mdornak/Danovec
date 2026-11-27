@@ -19,7 +19,7 @@ export default function Home() {
           <h1>V podnikání<br />jasno. <span>V daních taky.</span></h1>
           <p className="hero-description">Příjmy, výdaje i důležité termíny. Daňovec vám pomůže udělat si v podnikatelských financích pořádek — srozumitelně a bez zbytečného stresu.</p>
           <div className="hero-actions">
-            <a href="/funkce" className="button-primary">Prozkoumat Daňovce <Arrow diagonal /></a>
+            <a href="/funkce" className="button-primary">Prozkoumat Daňovce</a>
             <a href="/jak-to-funguje" className="button-secondary">Jak to funguje</a>
           </div>
         </div>

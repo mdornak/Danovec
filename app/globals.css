@@ -50,7 +50,7 @@
 .hero .button-primary{background:#050505;color:#fff}
 .hero .button-primary .arrow{color:#fff}
 .hero .button-secondary{background:#fff;color:#101010;border:1px solid #e2e2e2;box-shadow:0 2px 4px #00000008}
-.hero .button-primary:hover,.hero .button-secondary:hover{transform:translateY(-1px);box-shadow:0 5px 15px #00000012}
+.hero .button-primary:hover,.hero .button-secondary:hover{transform:none;box-shadow:0 5px 15px #00000012}
 @media(max-width:700px){.hero{padding:48px 21px 58px}.hero-copy{grid-template-columns:1fr;row-gap:0}.hero h1{grid-column:1;grid-row:1;font-size:clamp(40px,10vw,54px)}.hero-description{grid-column:1;grid-row:2;margin-top:17px;font-size:14px}.hero-actions{grid-column:1;grid-row:3;flex-wrap:wrap;margin-top:23px}}
 /* Align the hero edges with the header and the sections below */
 .hero{max-width:1176px;padding-left:0;padding-right:0}
@@ -69,4 +69,4 @@
 /* Align the hero description with the bottom of the headline */
 .hero-description{align-self:end;margin-top:0;margin-bottom:4px}
 @media(max-width:700px){.hero-description{align-self:start;margin-top:17px;margin-bottom:0}}
-.hero-divider{width:100%;height:1px;background:#e8e6e4;margin-top:4px}
+.hero-divider{position:relative;left:50%;width:100vw;height:1px;background:#e8e6e4;margin-top:4px;transform:translateX(-50%)}
