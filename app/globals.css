@@ -35,3 +35,7 @@
 .dash-brand .brand-mark{width:18px;height:11px;gap:0}
 .footer-brand .brand-mark{width:29px;height:18px}
 @media(max-width:620px){.brand-mark{width:31px;height:19px}.dash-brand .brand-mark{width:16px;height:10px}.footer-brand .brand-mark{width:27px;height:17px}}
+
+/* Hero text uses the full space when the dashboard preview is hidden */
+.hero{grid-template-columns:1fr}
+.hero-copy{max-width:820px;width:100%;margin:0 auto}
